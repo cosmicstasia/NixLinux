@@ -29,8 +29,7 @@
 
   virtualisation.docker.enable = true;
 
-  programs.nushell.enable = true;
-  programs.zsh.enable = true;
+
   users.defaultUserShell = pkgs.nushell;
 
   users.users.${username} = {
@@ -53,6 +52,7 @@
     go
     openjdk17
     lazygit
+    nushell
     tesseract
     nixd
     nixfmt
